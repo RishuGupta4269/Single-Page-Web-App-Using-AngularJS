@@ -28,7 +28,7 @@ function LunchChecker($scope){
 					k++;
 				}
 			}
-			if(k==0){
+			if(k==0){//only commas case 
 				$scope.empty=true;
 			}
 			else
