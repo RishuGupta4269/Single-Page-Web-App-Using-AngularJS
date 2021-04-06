@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+<head>
+	<title>Module 4 solution</title>
+	<meta  charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="header container">
+		<button class="col-xs-4" ui-sref-active="active" ui-sref="home"><a href="#">Home</a></button>
+		<span class="col-xs-4"></span>
+		<button class="col-xs-4" ui-sref-active="active" ui-sref="categories"><a href="#">Categories</a></button>
+	</div>
+	<h1 class="text-center col-xs-12">Module 4 Assignment</h1>
+
+	<ui-view></ui-view>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="script/modules/menuapp.module.js"></script>
+    <script src="script/modules/data.module.js"></script>
+    <script src="script/controllers/categories.controller.js"></script>
+    <script src="script/controllers/items.controller.js"></script>
+    <script src="script/service/menudata.service.js"></script>
+    <script src="script/components/categories.components.js"></script>
+    <script src="script/components/items.components.js"></script>
+    <script src="script/routes/routes.js"></script>
+    <script src="script/templates/home.html"></script>
+    <script src="script/templates/categories.components.html"></script>
+    <script src="script/templates/categories.template.html"></script>
+    <script src="script/templates/items.components.html"></script>
+    <script src="script/templates/items.template.html"></script>
+    
+
+</body>
+</html>
